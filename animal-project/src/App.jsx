@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Card from './Card.jsx';
-import Header from './Header.jsx';
+import Headder from './Header.jsx';
 import Footer from './Footer.jsx';
 
 function App() {
@@ -13,13 +13,25 @@ function App() {
         <main>
           <h1></h1>
           <div className='cards'>
-
+            <p></p>
           </div>
         </main>
       </header>
       <footer></footer>
     </>
   )
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

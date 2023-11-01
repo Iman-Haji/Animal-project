@@ -1,8 +1,6 @@
-# React + Vite
+# Animal Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Layout: has three components: header, footer (copyrights) and main area (as component)
+- We need card component
+- Make the cards ready (every card will had the closing button aka removes the card) then image then title then plus and minus buttons which will be writing a heart button the more you click it (placeholder for the icon and number)
+- Overeffect for cards

@@ -1,10 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <img src="" alt="" />
-      <button>close</button>
-      <button>-</button>
-      <title>+</title>
+      <small>yayayayayayyayayayayayyaya</small>
     </div>
   )
 }
