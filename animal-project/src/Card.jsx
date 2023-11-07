@@ -1,7 +1,7 @@
 const Card = () => {
   return (
     <div className="card">
-      <img src="https://source.unsplash.com/random" alt="unsplash random image" />
+      <img src="https://i.pinimg.com/564x/50/52/d9/5052d9a4e8eb406d775722d68b9370aa.jpg" alt="img of a view" />
       <h2>Title</h2>
       <button>close</button>
       <button>-</button>
