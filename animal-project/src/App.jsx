@@ -1,15 +1,30 @@
 import Header from './Header'
 import Footer from './Footer'
 import Card from './Card'
+import { animals } from './animalsList'
+import { useState } from 'react'
 
 function App() {
+  const [animalArray, setAnimal] = useState(animals);
+
+  const eventHandler = (id) => {
+    const updatedArray = animalArray.filter(animals => animals.id !== id)
+    setAnimal(updatedArray)
+  }
+
   return (
     <>
       <Header />
       <main>
         <h1>Animals</h1>
         <div className="cards">
-          <Card />
+          {animalArray.map(animals =>
+          (<Card
+            key={animals.name}
+            {...animals.likes}
+            click={() => eventHandler(animals.name)}
+          />
+          ))}
         </div>
       </main>
       <Footer />
@@ -17,8 +32,7 @@ function App() {
   )
 }
 
-
-export default App;
+export default App
 
 /*const [count, setCount] = useState(0)
  
