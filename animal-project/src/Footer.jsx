@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <div><small>This project is a schoolwork for the REACT23S react lessons</small></div>;
+  return <div><small>This is a project by Iman. </small></div>;
 };
 
 export default Footer;
