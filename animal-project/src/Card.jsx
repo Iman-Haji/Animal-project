@@ -1,13 +1,10 @@
-import { animals } from "./animalsList";
-
 const Card = () => {
   return (
     <div className="card">
-      <img src={animals} alt="animals" />
+      <img src="https://source.unsplash.com/400x400/?animals" alt="unsplash random img" />
       <h2>Title</h2>
       <button>lose</button>
       <button>-</button>
-      <span className="material-symbols-outlined">mood</span>
       <button>+</button>
     </div>
   );
@@ -16,7 +13,13 @@ const Card = () => {
 export default Card;
 
 /*
-      <img src="https://i.pinimg.com/564x/50/52/d9/5052d9a4e8eb406d775722d68b9370aa.jpg" alt="img of a view" />
+      <img src='https://source.unsplash.com/400x400/?animals''${props.title}' alt="animals" />
+
+
+<span className="material-symbols-outlined">mood</span>
+
+
+<img src="https://i.pinimg.com/564x/50/52/d9/5052d9a4e8eb406d775722d68b9370aa.jpg" alt="img of a view" />
 
 function Card() {
 return (
@@ -33,6 +36,4 @@ return (
  </Card>
 );
 }
-
-
 */
