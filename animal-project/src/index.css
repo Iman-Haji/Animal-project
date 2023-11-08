@@ -19,6 +19,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -47,9 +48,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -60,10 +63,39 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
+}
+
+.cards {
+  display: grid;
+  max-width: 800px;
+
+  display: grid;
+  gap: 3%;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
+  font-family: inherit;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  grid-template-columns: repeat(5, 1fr);
+
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px rgb(221, 222, 215, 0.30);
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
