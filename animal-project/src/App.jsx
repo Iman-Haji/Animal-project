@@ -18,13 +18,13 @@ function App() {
       <main>
         <h1>Animals</h1>
         <div className="cards">
-          {animalArray.map(animals =>
-          (<Card
-            key={animals.name}
-            {...animals.likes}
-            click={() => eventHandler(animals.name)}
-          />
-          ))}
+          {animalArray.map((animals) =>
+            <Card
+              key={animals.name}
+              {...animals}
+              click={() => eventHandler(animals.name)}
+            />
+          )}
         </div>
       </main>
       <Footer />
