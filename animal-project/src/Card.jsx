@@ -3,6 +3,7 @@ const Card = (props) => {
     <div className="card">
       <img src={`https://source.unsplash.com/400x400/?${props.name} `} alt="unsplash random img" />
       <h2>Title</h2>
+
       <h2>hello {name}</h2>
       <button>lose</button>
       <button>-</button>

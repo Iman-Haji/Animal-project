@@ -30,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 h1 {
@@ -80,17 +81,18 @@ button:focus-visible {
 .cards {
   display: grid;
   max-width: 700px;
-  display: grid;
   gap: .3%;
-  padding: 1em;
   font-size: 1.5em;
   font-weight: 100;
   font-family: inherit;
   align-items: center;
   text-align: center;
   color: #333;
-  grid-template-columns: repeat(4, 1fr);
-
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 12%;
+  grid-gap: 16px;
+  grid-row-gap: 24px;
+  grid-column-gap: 16px;
 }
 
 .card {
@@ -101,4 +103,8 @@ button:focus-visible {
   margin-bottom: 10px;
   max-width: 100%;
   height: auto;
+}
+
+.card img {
+  width: 500px;
 }
