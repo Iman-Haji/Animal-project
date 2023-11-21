@@ -38,8 +38,8 @@ h1 {
   line-height: 1.1;
   text-align: center;
   align-items: center;
-  padding-left: 100%;
-  padding-right: 100%;
+  /*padding-left: 100%;
+  padding-right: 100%;*/
 }
 
 button {
@@ -49,7 +49,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #D6AD60;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 1px;
@@ -90,7 +90,7 @@ button:focus-visible {
   text-align: center;
   color: rgb(246, 243, 243);
   grid-template-columns: repeat(3, 1fr);
-  padding-left: 11%;
+  padding-left: 100px;
   grid-gap: 16px;
   grid-row-gap: 24px;
   grid-column-gap: 16px;
@@ -98,17 +98,18 @@ button:focus-visible {
 
 .card {
   padding: 20px;
-  border: 1px solid #c9c9c9;
+  border: 3px solid #c9c9c9;
   border-radius: 7px;
   box-shadow: 2px 2px 4px rgb(221, 222, 215, 0.30);
   margin-bottom: 10px;
   max-width: 100%;
+  max-height: 100%;
   height: auto;
   cursor: pointer;
 }
 
 .card img {
-  width: 500px;
+  width: 350px;
 }
 
 .card::before {
