@@ -7,10 +7,25 @@ import { useState } from 'react'
 function App() {
   const [animalArray, setAnimal] = useState(animals);
 
-  const eventHandler = (id) => {
-    const updatedArray = animalArray.filter(animals => animals.id !== id)
-    setAnimal(updatedArray)
+  //remove animal
+  function handlerClose(name) {
+    const animalArrayFilter = animalArray.filter((animalArray) =>
+      animalArray.name != name)
+    setAnimal(animalArrayFilter);
   }
+  /*
+    //add like or remove like from animal by the animal name. 
+    function likeHanwdler(nameOfAnimal, animalAct) {
+      const anotherAnimalArray = animalArray.map(animals) => {
+        if (animals.name == animalAct && nameOfAnimal == 'addApp') {
+          return { likes: animals.likes, name: animals.name }
+        } else if (animals.name == animalAct && nameOfAnimal == 'removeApp') {
+          return { like: animals.likes, name: animals.name }
+        }
+        return { like: animals.likes, name: animals.name }
+      }
+      setAnimal(anotherAnimalArray);
+    }*/
 
   return (
     <>
@@ -22,7 +37,9 @@ function App() {
             <Card
               key={animals.name}
               {...animals}
-              click={() => eventHandler(animals.name)}
+              removelike={() => likeHandler(animals.name, 'remove')}
+              close={() => handlerClose(animals.name)}
+              addlike={() => likeHandler(animals.name, 'add')}
             />
           )}
         </div>
@@ -32,9 +49,34 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
-/*const [count, setCount] = useState(0)
+/*
+const removeHandler = (likes) => {
+    const animalArray = animals.filter((animals) => animals.likes !== likes);
+    setAnimal(animalArray);
+  };
+
+  return (
+    <>
+      <Header />
+      <main>
+        <h1>Animals</h1>
+        <div className="cards">
+          {animalArray.map((animals) =>
+            <Card
+              key={animals.name}
+              {...animals}
+              click={() => removeHandler(animals.name)}
+            />
+          )}
+        </div>
+      </main>
+      <Footer />
+
+
+
+const [count, setCount] = useState(0)
  
   return (
     <>
@@ -53,7 +95,6 @@ export default App
     </>
   ) 
   
- /* 
 function BasicExample() {
 return (
   <Card style={{ width: '18rem' }}>

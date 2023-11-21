@@ -1,10 +1,8 @@
-const Card = (props) => {
+/*const Card = (props) => {
   return (
     <div className="card">
       <img src={`https://source.unsplash.com/400x400/?${props.name} `} alt="unsplash random img" />
-      <h2>Title</h2>
-
-      <h2>hello {name}</h2>
+      <h2>{name}</h2>
       <button>lose</button>
       <button>-</button>
       <button>+</button>
@@ -12,9 +10,63 @@ const Card = (props) => {
   );
 };
 
+export default Card;*/
+
+function Card({ name, remove, plusLike, minusLike, likes }) {
+  return (
+    <div className="card">
+      <img src={`https://source.unsplash.com/400x400/?${name}`} alt="Animal Images from Unsplash..." />
+      <h2>{name}</h2>
+      <button className="closeButton" onClick={{ remove }}>remove</button>
+      <button onClick={plusLike}>+</button>
+      <button onClick={minusLike}>-</button>
+      <h3>{likes}</h3>
+    </div>
+  )
+}
+
+/*function Card1({ name, likes, remove, addlike, removelike }) {
+  return (
+    <div className="card">
+      <img src={`https://source.unsplash.com/400x400/?${name}`}
+        alt="Unsplash Animal Image..." />
+      <h2>{name}</h2>
+      <button className="closebtn" onClick={remove}>REMOVE</button>
+      <button onClick={removelike}>-</button>
+      <button onClick={addlike}>+</button>
+      <span
+        className="material-symbols-outlined">{
+          likes < 0 ? icon = 'heart_broken' : icon = 'favourite'
+        }</span>
+      <h2>{likes}</h2>
+    </div>
+  )
+}*/
+
 export default Card;
 
 /*
+
+
+
+
+___________________________________________________________
+const Card = (props) => {
+  return (
+    <div className="card">
+      <img src={`https://source.unsplash.com/400x400/?${props.name} `} alt="unsplash random img" />
+      <h2>{props.name}</h2>
+
+      <button onClick={click}>DELETE</button>
+      <button>-</button>
+      <button>+</button>
+      <button>{props.likes}</button>
+    </div>
+  );
+};
+
+
+
       <img src='https://source.unsplash.com/400x400/?animals''${props.title}' alt="animals" />
 
 
